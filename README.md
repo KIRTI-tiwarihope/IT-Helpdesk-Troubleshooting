@@ -75,30 +75,38 @@ The project followed a structured troubleshooting process:
 
 ## Project Structure
 
-```text
 IT-Helpdesk-Troubleshooting/
 │
 ├── README.md
+├── .gitignore
 │
-├── 01-Environment/
+├── 1.Environment/
+│   └── Permission-Lab/
+│       └── Finance-Confidential.txt
 │
-├── 02-Tickets/
+├── 2.Tickets/
 │   ├── INC-001-Network-Connectivity/
+│   │   └── incident-report.md
 │   ├── INC-002-DNS-Resolution/
+│   │   └── incident-report.md
 │   ├── INC-003-VPN/
+│   │   └── incident-report.md
 │   ├── INC-004-Account-Lockout/
+│   │   └── incident-report.md
 │   ├── INC-005-Permissions/
+│   │   └── incident-report.md
 │   └── INC-006-Software-Issue/
+│       └── incident-report.md
 │
-├── 03-Troubleshooting/
+├── 3.Troubleshooting/
 │   ├── network-troubleshooting.md
 │   ├── dns-troubleshooting.md
 │   ├── vpn-troubleshooting.md
 │   ├── account-troubleshooting.md
 │   └── software-troubleshooting.md
 │
-├── 04-Root-Cause-Analysis/
+├── 4.Root-Cause-Analysis/
 │   └── incident-summary.md
 │
-└── 05-Preventive-Actions/
-    └── recommendations.md
+└── 5.Preventive-Actions/
+    └── recommendation.md
