@@ -9,7 +9,19 @@ The objective was to investigate common technical support incidents, perform str
 The simulated organization is **Northstar Technologies**, a fictional company with approximately 50 employees across departments such as IT, HR, Finance, Sales, Operations, and Management.
 
 ---
+---
 
+## Network Diagram
+
+The following diagram represents the simulated logical network environment used for this project.
+
+![Northstar Technologies Simulated Network Diagram](1.Environment/network-diagram.png)
+
+> **Note:** This is a fictional, educational network diagram created for the troubleshooting simulation. It does not represent a production company network.
+
+---
+
+## Project Objectives
 ## Project Objectives
 
 - Investigate common IT support incidents.
