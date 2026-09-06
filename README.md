@@ -10,6 +10,16 @@ The simulated organization is **Northstar Technologies**, a fictional company wi
 
 ---
 ---
+---
+
+## Quick Navigation
+
+- [Environment](1.Environment/)
+- [Incident Tickets](2.Tickets/)
+- [Troubleshooting Guides](3.Troubleshooting/)
+- [Root Cause Analysis](4.Root-Cause-Analysis/)
+- [Preventive Actions](5.Preventive-Actions/)
+
 
 ## Network Diagram
 
@@ -21,7 +31,7 @@ The following diagram represents the simulated logical network environment used 
 
 ---
 
-## Project Objectives
+
 ## Project Objectives
 
 - Investigate common IT support incidents.
