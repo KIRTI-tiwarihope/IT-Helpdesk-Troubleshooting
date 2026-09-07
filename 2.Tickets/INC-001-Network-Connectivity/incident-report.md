@@ -71,10 +71,17 @@ Finding: The workstation was able to reach the destination.
 
 ## Root Cause
 
-No network fault was identified during troubleshooting.
+No active network fault was identified during the investigation.
 
-Testing confirmed that local connectivity, Internet connectivity, DNS resolution and routing were functioning normally.
+Testing confirmed that the workstation had:
 
+- A functioning local TCP/IP stack
+- Successful communication with the default gateway
+- Working external Internet connectivity
+- Successful DNS resolution
+- Successful routing to the tested destination
+
+The original user-reported issue could not be reproduced during troubleshooting. The incident was therefore classified as **No Fault Found (NFF)** pending recurrence with additional diagnostic information.
 ## Resolution
 
 No configuration changes were required.
