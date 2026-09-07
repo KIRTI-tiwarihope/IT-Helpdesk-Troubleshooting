@@ -26,7 +26,11 @@ No critical Windows system failure was identified.
 
 ## Root Cause
 
-Application startup failure caused by a simulated software configuration or application-state issue.
+The reported application startup failure could not be conclusively reproduced in the lab environment.
+
+The investigation covered application installation, running processes, system resources, and Windows Event Viewer. No critical Windows system failure or confirmed application error was identified.
+
+The incident is therefore documented as a **simulated software troubleshooting scenario**, rather than a confirmed production root cause. A recurring failure would require the affected application name, exact error message, and relevant application logs for further investigation.
 
 ## Resolution
 
