@@ -48,7 +48,11 @@ Finding: The Windows VPN-related service was operational.
 
 ## Root Cause
 
-The workstation did not have the required company VPN profile/configuration.
+The simulated workstation did not have the required organizational VPN profile/configuration.
+
+Internet connectivity was confirmed, and the Windows Remote Access Connection Manager service was running. No organizational VPN profile or approved VPN client configuration was present on the lab workstation.
+
+Because this is a controlled lab environment, the production VPN configuration was not installed. The finding therefore represents a **simulated provisioning/configuration issue**, rather than a production VPN outage.
 
 ## Resolution
 
