@@ -26,7 +26,11 @@ The Finance-TestUser account was configured with limited permissions to demonstr
 
 ## Root Cause
 
-Insufficient NTFS permissions assigned to the test user.
+The reported Access Denied condition could not be conclusively reproduced during the lab test.
+
+The Finance-TestUser account was configured as a standard local user and was assigned limited NTFS permissions. However, the file remained accessible during the access test. Therefore, insufficient permissions could not be confirmed as the actual cause of the reported issue.
+
+The incident is documented as a **simulated permissions investigation**, demonstrating how NTFS permissions can be reviewed when troubleshooting file-access problems.
 
 ## Resolution
 
