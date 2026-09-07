@@ -66,14 +66,14 @@ The configured DNS server was responding to DNS queries.
 
 ## Final Diagnosis
 
-No DNS fault was identified during testing.
+No active DNS fault was identified during the investigation.
 
-The reported DNS problem could not be reproduced.
+The troubleshooting sequence confirmed:
 
-## Help Desk Troubleshooting Process
+- Working Internet connectivity independent of DNS
+- Successful DNS resolution for the tested hostname
+- Successful response from the specified DNS server
 
-1. Test Internet connectivity by IP address.
-2. Test DNS name resolution.
-3. Test the configured DNS server directly.
-4. Compare the results.
-5. Document the findings.
+The original user-reported DNS problem could not be reproduced during the lab investigation. The incident was therefore treated as **No Fault Found (NFF)** pending recurrence with the affected hostname and exact error message.
+
+> **Lab Note:** This investigation was performed in a controlled Windows lab environment. The results demonstrate the DNS troubleshooting methodology and diagnostic process rather than a production DNS incident.
