@@ -46,13 +46,16 @@ Finding: The configured DNS server was reachable and successfully resolving quer
 
 ## Root Cause
 
-No DNS fault was identified during the investigation.
+No active DNS fault was identified during the investigation.
 
-The available evidence showed that:
+Testing confirmed that:
 
-- Internet connectivity was working.
-- DNS resolution was working.
-- The configured DNS server was responding.
+- Internet connectivity was available.
+- DNS resolution for the tested hostname was successful.
+- The configured DNS server was reachable and responding correctly.
+
+The original hostname-resolution issue could not be reproduced during troubleshooting. The incident was therefore classified as **No Fault Found (NFF)** pending recurrence with the affected hostname and exact error message.
+
 
 ## Resolution
 
