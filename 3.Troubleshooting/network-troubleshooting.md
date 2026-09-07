@@ -122,16 +122,17 @@ The network path was functioning sufficiently for Internet connectivity.
 
 ## Final Diagnosis
 
-No network fault was identified during testing.
+No active network fault was identified during the investigation.
 
-The reported network problem could not be reproduced.
+The troubleshooting sequence confirmed:
 
-## Help Desk Troubleshooting Process
+- Valid IP configuration and default gateway
+- Working local TCP/IP stack
+- Successful communication with the default gateway
+- Successful external Internet connectivity
+- Successful DNS resolution
+- A functioning network path to the tested destination
 
-1. Check network configuration.
-2. Test the local TCP/IP stack.
-3. Test the default gateway.
-4. Test Internet connectivity.
-5. Test DNS resolution.
-6. Check the network path.
-7. Document the findings.
+The original user-reported connectivity issue could not be reproduced during the lab investigation. The incident was therefore treated as **No Fault Found (NFF)** pending recurrence with additional information such as the affected website, application, and exact error message.
+
+> **Lab Note:** This investigation was performed in a controlled Windows lab environment. The results demonstrate the troubleshooting methodology and diagnostic process rather than a production network incident.
