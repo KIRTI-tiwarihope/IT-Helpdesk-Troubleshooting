@@ -30,6 +30,18 @@ The following diagram represents the simulated logical network environment used 
 > **Note:** This is a fictional, educational network diagram created for the troubleshooting simulation. It does not represent a production company network.
 
 ---
+---
+
+## Key Findings
+
+- **INC-001 — Network Connectivity:** Network connectivity was verified successfully using IP configuration, ping, DNS resolution, and traceroute testing. No active network fault was identified.
+- **INC-002 — DNS Resolution:** DNS resolution was verified using `nslookup` against the configured DNS service. No active DNS failure was identified.
+- **INC-003 — VPN Connection:** Windows VPN settings and related services were reviewed. The simulated issue was associated with missing VPN configuration.
+- **INC-004 — Account Lockout:** Local account status and Windows Security events were reviewed. No confirmed account lockout was identified during testing.
+- **INC-005 — Permissions:** NTFS permissions were reviewed using a dedicated test account and a controlled permissions lab.
+- **INC-006 — Software Issue:** Standard application troubleshooting procedures were documented, including process checks, restart/reboot testing, resource checks, and Event Viewer review.
+
+> **Note:** Some incidents in this project are controlled simulations rather than production failures. Findings are documented according to the evidence available during the lab exercises.
 
 
 ## Project Objectives
