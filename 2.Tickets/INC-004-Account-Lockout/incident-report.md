@@ -44,7 +44,11 @@ Result: No relevant 4625 event was identified during the investigation.
 
 ## Root Cause
 
-A local account-lockout condition could not be reproduced or confirmed on the lab workstation.
+No account-lockout condition was reproduced or confirmed on the lab workstation.
+
+The local account was not marked as locked out, and no relevant failed-logon Event ID 4625 was identified during the investigation. Event ID 4624 confirmed successful logon activity.
+
+The reported lockout therefore could not be validated in the lab environment. The incident was classified as **No Fault Found (NFF)**. In a production environment, the next step would be to investigate the user's Active Directory account and identify any devices, services, or applications generating repeated authentication failures.
 
 ## Resolution
 
