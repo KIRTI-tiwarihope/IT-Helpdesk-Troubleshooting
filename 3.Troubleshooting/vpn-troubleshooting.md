@@ -4,74 +4,122 @@
 
 This document records the VPN troubleshooting process performed during the Help Desk simulation.
 
-## Tests Performed
+The troubleshooting was conducted in a controlled Windows lab environment. No corporate VPN client or organizational VPN profile was configured on the test computer.
 
-### 1. Check Network Connections
+---
 
-Tool:
+## Troubleshooting Process
+
+### 1. Verify Network Connectivity
+
+**Tool:**
 
 Network Connections (`ncpa.cpl`)
 
-Purpose:
+**Purpose:**
 
-Used to check available network adapters and VPN connections.
+Verify that the computer has an active network adapter and determine whether a VPN connection is present.
 
-Result:
+**Result:**
 
-The computer had a working network connection, but no VPN connection was configured.
+The computer had an active network connection, but no VPN connection was configured.
+
+**Finding:**
+
+Basic network connectivity was available, but there was no configured VPN connection to test.
 
 ---
 
 ### 2. Check Windows VPN Settings
 
-Location:
+**Location:**
 
 Settings → Network & Internet → VPN
 
-Purpose:
+**Purpose:**
 
-Used to determine whether a VPN profile was configured.
+Determine whether a VPN profile is configured on the computer.
 
-Result:
+**Result:**
 
 No organizational VPN profile was configured.
+
+**Finding:**
+
+The computer did not contain a corporate VPN configuration.
 
 ---
 
 ### 3. Check Remote Access Connection Manager
 
-Tool:
+**Tool:**
 
 Services (`services.msc`)
 
-Service:
+**Service:**
 
 Remote Access Connection Manager
 
-Result:
+**Result:**
 
 The service was running and configured for Automatic startup.
 
-Conclusion:
+**Finding:**
 
-The Windows VPN-related service was available, but an organizational VPN profile was not configured.
+The Windows VPN-related service was available and running. However, the presence of the service does not confirm that a corporate VPN profile or client configuration is installed.
+
+---
 
 ## Final Diagnosis
 
-The simulated VPN issue was caused by a missing VPN profile/configuration.
+The simulated VPN issue was associated with a missing VPN profile/configuration.
+
+Because no organizational VPN profile was configured, a successful corporate VPN connection could not be established or tested on the lab computer.
+
+---
 
 ## Resolution
 
 No VPN software or organizational VPN profile was installed on the lab computer.
 
-In a real enterprise environment, the Help Desk would deploy or configure the approved corporate VPN according to company procedures.
+For the simulation, the missing VPN configuration was identified as the limiting factor.
 
-## Help Desk Troubleshooting Process
+In a real enterprise environment, the Help Desk would verify the approved VPN client, profile, authentication requirements, and deployment procedure before configuring the user's device.
+
+---
+
+## Verification
+
+The following items were verified during troubleshooting:
+
+- Network connectivity was available.
+- A VPN-capable Windows service was running.
+- No organizational VPN profile was present.
+- No corporate VPN connection could be established because the required configuration was not available.
+
+---
+
+## Enterprise Help Desk Workflow
+
+For a real VPN incident, the Help Desk should:
 
 1. Verify Internet connectivity.
 2. Check available network adapters.
-3. Check whether a VPN profile exists.
-4. Check VPN-related Windows services.
-5. Verify VPN credentials and configuration in an enterprise environment.
-6. Escalate if the VPN server or authentication system is unavailable.
-7. Document the findings.
+3. Confirm whether the approved VPN client is installed.
+4. Check whether the required VPN profile exists.
+5. Verify VPN-related Windows services.
+6. Verify VPN credentials and authentication requirements.
+7. Check for VPN client or connection errors.
+8. Determine whether the issue affects one user or multiple users.
+9. Escalate if the VPN server, authentication system, or network service is unavailable.
+10. Document troubleshooting steps, findings, and resolution.
+
+---
+
+## Evidence and Limitations
+
+This incident was a controlled troubleshooting simulation rather than a production VPN outage.
+
+The lab environment did not contain a corporate VPN client or organizational VPN profile. Therefore, an actual successful or failed corporate VPN connection could not be reproduced.
+
+The diagnosis is based on the configuration observed during the lab exercise.
