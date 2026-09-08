@@ -6,7 +6,9 @@ Northstar Technologies — IT Help Desk Troubleshooting Simulation
 
 ## Purpose
 
-This document provides recommendations for preventing recurring IT support incidents.
+This document provides preventive recommendations based on the Help Desk incidents and troubleshooting scenarios investigated during the project.
+
+The goal is to reduce recurring incidents, improve support efficiency, strengthen documentation, and promote consistent IT operations.
 
 ---
 
@@ -14,15 +16,20 @@ This document provides recommendations for preventing recurring IT support incid
 
 ### Recommendation
 
-Maintain documented network configuration standards and regularly monitor network connectivity.
+Maintain documented network standards and monitor recurring connectivity problems to identify infrastructure or configuration issues.
 
 ### Preventive Actions
 
-- Document network configuration.
-- Maintain updated network diagrams.
-- Monitor network equipment.
-- Check recurring connectivity incidents for patterns.
-- Keep network drivers updated.
+- Maintain an up-to-date network diagram.
+- Document approved IP addressing and gateway configuration.
+- Monitor network equipment and connectivity where appropriate.
+- Review recurring network incidents for common patterns.
+- Keep network drivers and operating-system updates current.
+- Document known network troubleshooting procedures.
+
+### Expected Benefit
+
+Faster identification of connectivity problems and improved escalation when infrastructure issues occur.
 
 ---
 
@@ -30,14 +37,20 @@ Maintain documented network configuration standards and regularly monitor networ
 
 ### Recommendation
 
-Maintain reliable and documented DNS configuration.
+Maintain reliable and documented DNS configuration across supported workstations and network infrastructure.
 
 ### Preventive Actions
 
 - Document approved DNS servers.
-- Monitor DNS availability.
-- Investigate repeated name-resolution failures.
+- Monitor DNS service availability.
+- Investigate recurring name-resolution failures.
 - Verify DNS configuration during workstation troubleshooting.
+- Document common DNS troubleshooting commands and procedures.
+- Escalate repeated DNS failures when they indicate a broader infrastructure issue.
+
+### Expected Benefit
+
+Reduced troubleshooting time and faster identification of DNS-related problems.
 
 ---
 
@@ -49,11 +62,17 @@ Standardize corporate VPN deployment and configuration.
 
 ### Preventive Actions
 
-- Provide users with an approved VPN client or configuration.
-- Document VPN setup procedures.
-- Maintain current VPN documentation.
-- Verify VPN authentication and connectivity.
-- Provide users with basic VPN troubleshooting instructions.
+- Provide users with the approved VPN client and configuration.
+- Maintain documented VPN deployment procedures.
+- Keep VPN profiles and client versions current.
+- Verify VPN authentication and connectivity requirements.
+- Document common VPN error conditions.
+- Provide users with basic VPN troubleshooting guidance.
+- Escalate authentication or VPN-server problems when required.
+
+### Expected Benefit
+
+More consistent remote-access configuration and fewer user-side VPN setup issues.
 
 ---
 
@@ -61,15 +80,20 @@ Standardize corporate VPN deployment and configuration.
 
 ### Recommendation
 
-Monitor repeated authentication failures and educate users about account security.
+Monitor authentication failures and use consistent account-management procedures.
 
 ### Preventive Actions
 
 - Investigate repeated failed logons.
-- Check for stale credentials on devices and applications.
-- Follow account lockout policies.
-- Use secure password-reset procedures.
-- Document account-related incidents.
+- Check for stale credentials on devices, services, and applications.
+- Follow documented account lockout policies.
+- Use secure identity-verification procedures for password resets.
+- Document account-related incidents and recurring patterns.
+- Escalate repeated authentication failures when the source cannot be identified.
+
+### Expected Benefit
+
+Faster account recovery while maintaining appropriate security controls.
 
 ---
 
@@ -77,15 +101,21 @@ Monitor repeated authentication failures and educate users about account securit
 
 ### Recommendation
 
-Use least-privilege access and manage permissions through security groups where possible.
+Apply least-privilege access and manage permissions through security groups where possible.
 
 ### Preventive Actions
 
 - Review sensitive folder permissions regularly.
 - Remove unnecessary access.
 - Avoid excessive Full Control permissions.
-- Use security groups for access management.
+- Use security groups for role-based access management.
 - Document permission changes.
+- Review inherited permissions when investigating unexpected access.
+- Follow an approval process for sensitive data access.
+
+### Expected Benefit
+
+Reduced risk of unauthorized access while making permission management easier to maintain.
 
 ---
 
@@ -93,15 +123,21 @@ Use least-privilege access and manage permissions through security groups where 
 
 ### Recommendation
 
-Maintain supported and updated business applications.
+Maintain supported, documented, and updated business applications.
 
 ### Preventive Actions
 
-- Keep applications updated.
-- Test important software updates before broad deployment.
+- Keep applications and dependencies updated.
+- Test important software updates before broad deployment when practical.
 - Monitor recurring application errors.
 - Maintain application troubleshooting documentation.
 - Record software versions during incident investigation.
+- Review Event Viewer and application logs when appropriate.
+- Escalate recurring application failures to the application support team.
+
+### Expected Benefit
+
+Reduced application downtime and faster identification of recurring software problems.
 
 ---
 
@@ -117,32 +153,81 @@ Maintain accurate documentation for:
 - Software applications
 - User access procedures
 - Escalation procedures
+- Known errors and resolutions
+
+Documentation should be reviewed periodically to ensure that procedures remain current.
+
+---
 
 ## Standardization
 
-Use consistent troubleshooting procedures so that different technicians can investigate similar incidents using the same process.
+Use consistent troubleshooting procedures so that different technicians can investigate similar incidents using a repeatable process.
 
-## Monitoring
+Standardized troubleshooting should include:
 
-Identify recurring incidents and investigate whether they indicate an underlying infrastructure or configuration problem.
+1. Identify the reported symptoms.
+2. Gather relevant information.
+3. Reproduce the issue when possible.
+4. Test likely causes systematically.
+5. Collect evidence.
+6. Apply an appropriate resolution.
+7. Verify the result.
+8. Document the outcome.
+
+---
+
+## Monitoring and Trend Analysis
+
+Review Help Desk tickets regularly to identify recurring incidents.
+
+Examples of useful trends include:
+
+- Repeated network failures
+- Recurring DNS problems
+- Multiple VPN configuration issues
+- Frequent account lockouts
+- Repeated permission requests
+- Recurring application failures
+
+Recurring incidents may indicate an underlying infrastructure, configuration, training, or process problem.
+
+---
 
 ## User Education
 
-Provide users with simple guidance for common problems such as:
+Provide users with simple guidance for common issues such as:
 
-- Password issues
+- Password and account problems
 - VPN connection problems
 - Network connectivity
 - Software troubleshooting
 - File access
 
+User education should complement, not replace, formal Help Desk procedures.
+
+---
+
 ## Least Privilege
 
 Users should receive only the permissions required to perform their job responsibilities.
 
+Access should be reviewed periodically and removed when it is no longer required.
+
+---
+
 ## Continuous Improvement
 
-Help Desk incident data should be reviewed regularly to identify recurring problems and opportunities for automation, documentation, training, or infrastructure improvements.
+Help Desk incident data should be reviewed regularly to identify opportunities for:
+
+- Improved documentation
+- User training
+- Automation
+- Monitoring
+- Process improvement
+- Configuration standardization
+- Infrastructure improvements
+
+Lessons learned from recurring incidents should be incorporated into troubleshooting documentation and support procedures.
 
 ---
 
@@ -153,7 +238,10 @@ A successful Help Desk does more than resolve individual tickets.
 The goal should be to:
 
 1. Resolve the immediate issue.
-2. Identify the root cause.
-3. Document the solution.
-4. Prevent the issue from recurring.
-5. Improve the overall IT support process.
+2. Identify the root cause when sufficient evidence is available.
+3. Document the troubleshooting process and findings.
+4. Verify the resolution before closing the incident.
+5. Identify preventive actions.
+6. Improve the overall IT support process.
+
+Preventive actions should be based on documented evidence and recurring incident trends rather than assumptions.
