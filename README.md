@@ -43,6 +43,21 @@ The following diagram represents the simulated logical network environment used 
 
 > **Note:** Some incidents in this project are controlled simulations rather than production failures. Findings are documented according to the evidence available during the lab exercises.
 
+---
+
+## What I Demonstrated
+
+This project demonstrates practical IT Help Desk skills through controlled Windows troubleshooting scenarios:
+
+- **Windows troubleshooting:** Used tools such as `ipconfig`, `ping`, `nslookup`, `tracert`, `Event Viewer`, `Task Manager`, `Computer Management`, and `services.msc`.
+- **Network diagnostics:** Investigated IP configuration, gateway connectivity, Internet access, DNS resolution, and network paths.
+- **VPN troubleshooting:** Reviewed Windows VPN configuration and related services.
+- **Account troubleshooting:** Reviewed local account status and Windows Security authentication events.
+- **File permissions:** Investigated NTFS permissions using a dedicated test account and controlled permissions lab.
+- **Software troubleshooting:** Documented a structured process for application startup, process, resource, and Event Viewer investigation.
+- **Root-cause analysis:** Distinguished confirmed findings from issues that could not be reproduced.
+- **Incident documentation:** Recorded symptoms, investigation steps, findings, resolutions, verification, and limitations.
+- **Preventive actions:** Developed recommendations to reduce recurring incidents and improve IT support processes.
 
 ## Project Objectives
 
